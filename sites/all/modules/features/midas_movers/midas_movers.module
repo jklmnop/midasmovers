@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Midas Movers feature.
+ */
+
+include_once 'midas_movers.features.inc';
