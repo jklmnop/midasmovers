@@ -1,1 +1,53 @@
-// Insert your styling here.
+.navbar {
+
+  .logo {
+    @media (max-width: @screen-xs-max) {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (min-width: @screen-xs-max) {
+      width: 174px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .menu {
+    @media (min-width: @screen-xs-max) {
+      width: 100%;
+      display: table;
+      position: relative;
+
+      .leaf {
+        width: 20%;
+        text-align: center;
+        vertical-align: middle;
+        text-shadow: 0 1px #cc9611;
+        display: table-cell;
+
+        &:before {
+          content: '';
+          position: absolute;
+          border-left: 1px solid #d9850c;
+          border-right: 1px solid #f3d71d;
+          top: 0;
+          bottom: 0;
+        }
+
+        a {
+          color: @black;
+          background-color: @midasgold;
+          text-transform: uppercase;
+          padding: 25px 15px 24px;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

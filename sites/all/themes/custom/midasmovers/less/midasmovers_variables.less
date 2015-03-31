@@ -2,3 +2,25 @@
 @midastype: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
 
 @font-family-sans-serif: @midastype;
+
+@white: #fdfdfd;
+@black: #333333;
+
+@navbar-border-radius: 0;
+@navbar-padding-horizontal: 0;
+@navbar-default-color: @white;
+@navbar-default-bg: transparent;
+@navbar-default-border: none;
+
+body {
+  background-color: @midasgold;
+}
+
+.everything {
+  background-color: @white;
+
+  @media (min-width: @screen-sm-max) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

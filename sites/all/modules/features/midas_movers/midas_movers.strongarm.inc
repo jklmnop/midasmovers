@@ -161,14 +161,14 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1427153520;
+  $strongarm->value = 1427757137;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nlozpl';
+  $strongarm->value = 'nm1vg7';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -320,18 +320,19 @@ function midas_movers_strongarm() {
     19 => 30,
     20 => 29,
     21 => 28,
-    22 => 24,
-    23 => 21,
-    24 => 15,
-    25 => 14,
-    26 => 13,
-    27 => 11,
-    28 => 7,
-    29 => 6,
-    30 => 5,
-    31 => 3,
-    32 => 2,
-    33 => 1,
+    22 => 27,
+    23 => 24,
+    24 => 21,
+    25 => 15,
+    26 => 14,
+    27 => 13,
+    28 => 11,
+    29 => 7,
+    30 => 6,
+    31 => 5,
+    32 => 3,
+    33 => 2,
+    34 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -503,28 +504,28 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'localhost';
+  $strongarm->value = 'Midas Movers, LLC';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_slogan';
-  $strongarm->value = '';
+  $strongarm->value = 'You\'re Golden!';
   $export['site_slogan'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'bootstrap';
+  $strongarm->value = 'midasmovers';
   $export['theme_default'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1427153523;
+  $strongarm->value = 1427757144;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
