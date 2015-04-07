@@ -168,21 +168,21 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1427757137;
+  $strongarm->value = 1428443697;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nm1vg7';
+  $strongarm->value = 'nmgkao';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1427757140;
+  $strongarm->value = 1428361230;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -226,16 +226,18 @@ function midas_movers_strongarm() {
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'midas_movers' => array(
-      'variable' => '6479ab8e6af0641707694cc56a50968c',
+      'variable' => '6e30a585ae8b71358d06787f7c4e21a5',
       'field_base' => 'ac063b89fa939e91349e6e270c99827c',
       'field_instance' => '7549649fab51dc91719fbc458b61cbd5',
       'filter' => 'e1ba718b9bb5189bfb3604dcce922498',
-      'menu_custom' => '2042931cc12c0466aab8fc8a74f2d400',
+      'menu_custom' => '8ca9f6f82f4b161f169a1f32bbf43f41',
       'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
       'user_role' => '57d23ee3deb6e9262fa3b2617586b072',
       'user_permission' => '863ab1b09f670b98f4739741a8a704c5',
       'dependencies' => '186b8334a079f1130c71233681f27c98',
       'node' => '515f122680d4fd1878b95f7ca3a5e824',
+      'page_manager_pages' => '342e1c6d362fa9a693b0e63a5b70ef69',
+      'menu_links' => '0d3e29a4051bb325981834b1a78e9f46',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -360,22 +362,22 @@ function midas_movers_strongarm() {
     4 => 246,
     5 => 245,
     6 => 125,
-    7 => 123,
-    8 => 122,
-    9 => 121,
-    10 => 117,
-    11 => 63,
-    12 => 62,
-    13 => 61,
-    14 => 60,
-    15 => 59,
-    16 => 58,
-    17 => 44,
-    18 => 31,
-    19 => 30,
-    20 => 29,
-    21 => 28,
-    22 => 27,
+    7 => 124,
+    8 => 123,
+    9 => 122,
+    10 => 121,
+    11 => 117,
+    12 => 63,
+    13 => 62,
+    14 => 61,
+    15 => 60,
+    16 => 59,
+    17 => 58,
+    18 => 44,
+    19 => 31,
+    20 => 30,
+    21 => 29,
+    22 => 28,
     23 => 24,
     24 => 21,
     25 => 15,
@@ -441,7 +443,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1427158154';
+  $strongarm->value = '1427762861';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -559,7 +561,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node';
+  $strongarm->value = 'home';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -594,7 +596,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1427757144;
+  $strongarm->value = 1428443703;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

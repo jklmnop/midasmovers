@@ -438,27 +438,6 @@ function midas_movers_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'management_regional-and-language:admin/config/regional',
   );
-  // Exported menu link: management_devel-settings:admin/config/development/devel
-  $menu_links['management_devel-settings:admin/config/development/devel'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/config/development/devel',
-    'router_path' => 'admin/config/development/devel',
-    'link_title' => 'Devel settings',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Helper functions, pages, and blocks to assist Drupal developers. The devel blocks can be managed via the <a href="/midasmovers/admin/structure/block">block administration</a> page.',
-      ),
-      'identifier' => 'management_devel-settings:admin/config/development/devel',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-    'parent_identifier' => 'management_development:admin/config/development',
-  );
   // Exported menu link: management_development:admin/config/development
   $menu_links['management_development:admin/config/development'] = array(
     'menu_name' => 'management',
@@ -763,6 +742,27 @@ function midas_movers_menu_default_menu_links() {
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'management_structure:admin/structure',
+  );
+  // Exported menu link: management_mini-panels:admin/structure/mini-panels
+  $menu_links['management_mini-panels:admin/structure/mini-panels'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/structure/mini-panels',
+    'router_path' => 'admin/structure/mini-panels',
+    'link_title' => 'Mini panels',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Add, edit or delete mini panels, which can be used as blocks or content panes in other panels.',
+      ),
+      'identifier' => 'management_mini-panels:admin/structure/mini-panels',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
     'expanded' => 0,
     'weight' => 0,
     'customized' => 0,
@@ -1350,6 +1350,48 @@ function midas_movers_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'management_menus:admin/structure/menu',
   );
+  // Exported menu link: management_views-plugins:admin/reports/views-plugins
+  $menu_links['management_views-plugins:admin/reports/views-plugins'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/reports/views-plugins',
+    'router_path' => 'admin/reports/views-plugins',
+    'link_title' => 'Views plugins',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Overview of plugins used in all views.',
+      ),
+      'identifier' => 'management_views-plugins:admin/reports/views-plugins',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'management_reports:admin/reports',
+  );
+  // Exported menu link: management_views:admin/structure/views
+  $menu_links['management_views:admin/structure/views'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/structure/views',
+    'router_path' => 'admin/structure/views',
+    'link_title' => 'Views',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Manage customized lists of content.',
+      ),
+      'identifier' => 'management_views:admin/structure/views',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'management_structure:admin/structure',
+  );
   // Exported menu link: management_web-services:admin/config/services
   $menu_links['management_web-services:admin/config/services'] = array(
     'menu_name' => 'management',
@@ -1599,7 +1641,6 @@ function midas_movers_menu_default_menu_links() {
   t('Cron');
   t('Dashboard');
   t('Date and time');
-  t('Devel settings');
   t('Development');
   t('Features');
   t('Field list');
@@ -1617,6 +1658,7 @@ function midas_movers_menu_default_menu_links() {
   t('Management');
   t('Media');
   t('Menus');
+  t('Mini panels');
   t('Modules');
   t('Navigation');
   t('Our Services');
@@ -1652,6 +1694,8 @@ function midas_movers_menu_default_menu_links() {
   t('User account');
   t('User interface');
   t('User menu');
+  t('Views');
+  t('Views plugins');
   t('Web services');
   t('Workflow');
   t('jQuery update');

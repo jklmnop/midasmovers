@@ -15,7 +15,7 @@ function midas_movers_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Front Page';
   $page->admin_description = '';
-  $page->path = '<front>';
+  $page->path = 'home';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -23,23 +23,6 @@ function midas_movers_default_page_manager_pages() {
     'admin_paths' => FALSE,
   );
   $page->default_handlers = array();
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page-front_page__http_response_code';
-  $handler->task = 'page';
-  $handler->subtask = 'front_page';
-  $handler->handler = 'http_response';
-  $handler->weight = 0;
-  $handler->conf = array(
-    'title' => 'HTTP response code',
-    'contexts' => array(),
-    'relationships' => array(),
-    'code' => '404',
-    'destination' => '',
-    'name' => 'http_response_code',
-  );
-  $page->default_handlers[$handler->name] = $handler;
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
@@ -61,12 +44,13 @@ function midas_movers_default_page_manager_pages() {
     'name' => '',
   );
   $display = new panels_display();
-  $display->layout = 'flexible';
+  $display->layout = 'onecol';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
@@ -75,19 +59,13 @@ function midas_movers_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-cca17965-8d37-4e2c-82ea-9a1938509452';
-    $pane->panel = 'center';
-    $pane->type = 'node';
-    $pane->subtype = 'node';
+    $pane->pid = 'new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
+    $pane->panel = 'middle';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'services';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '1',
-      'links' => 1,
-      'leave_node_title' => 0,
-      'identifier' => '',
-      'build_mode' => 'teaser',
-      'link_node_title' => 0,
       'override_title' => 0,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
@@ -100,11 +78,11 @@ function midas_movers_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'cca17965-8d37-4e2c-82ea-9a1938509452';
-    $display->content['new-cca17965-8d37-4e2c-82ea-9a1938509452'] = $pane;
-    $display->panels['center'][0] = 'new-cca17965-8d37-4e2c-82ea-9a1938509452';
+    $pane->uuid = '0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
+    $display->content['new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f'] = $pane;
+    $display->panels['middle'][0] = 'new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-cca17965-8d37-4e2c-82ea-9a1938509452';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['front_page'] = $page;
