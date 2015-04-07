@@ -59,6 +59,29 @@ function midas_movers_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-47fdab1b-3347-4e96-9e25-0f9d4d8f66d1';
+    $pane->panel = 'middle';
+    $pane->type = 'block';
+    $pane->subtype = 'nivo_slider-nivo_slider';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '47fdab1b-3347-4e96-9e25-0f9d4d8f66d1';
+    $display->content['new-47fdab1b-3347-4e96-9e25-0f9d4d8f66d1'] = $pane;
+    $display->panels['middle'][0] = 'new-47fdab1b-3347-4e96-9e25-0f9d4d8f66d1';
+    $pane = new stdClass();
     $pane->pid = 'new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
     $pane->panel = 'middle';
     $pane->type = 'panels_mini';
@@ -76,11 +99,11 @@ function midas_movers_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
     $display->content['new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f'] = $pane;
-    $display->panels['middle'][0] = 'new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
+    $display->panels['middle'][1] = 'new-0c0a7ca3-29dc-481e-865b-6b15fd912a7f';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

@@ -807,6 +807,27 @@ function midas_movers_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'management_menus:admin/structure/menu',
   );
+  // Exported menu link: management_nivo-slider:admin/structure/nivo-slider
+  $menu_links['management_nivo-slider:admin/structure/nivo-slider'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/structure/nivo-slider',
+    'router_path' => 'admin/structure/nivo-slider',
+    'link_title' => 'Nivo Slider',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Configure slider content and options.',
+      ),
+      'identifier' => 'management_nivo-slider:admin/structure/nivo-slider',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'management_structure:admin/structure',
+  );
   // Exported menu link: management_pages:admin/structure/pages
   $menu_links['management_pages:admin/structure/pages'] = array(
     'menu_name' => 'management',
@@ -1661,6 +1682,7 @@ function midas_movers_menu_default_menu_links() {
   t('Mini panels');
   t('Modules');
   t('Navigation');
+  t('Nivo Slider');
   t('Our Services');
   t('Pages');
   t('Panel');

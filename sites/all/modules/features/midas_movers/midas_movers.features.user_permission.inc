@@ -19,6 +19,15 @@ function midas_movers_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'access all views'.
+  $permissions['access all views'] = array(
+    'name' => 'access all views',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'views',
+  );
+
   // Exported permission: 'access comments'.
   $permissions['access comments'] = array(
     'name' => 'access comments',
@@ -194,6 +203,15 @@ function midas_movers_user_default_permissions() {
     'module' => 'menu',
   );
 
+  // Exported permission: 'administer mini panels'.
+  $permissions['administer mini panels'] = array(
+    'name' => 'administer mini panels',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_mini',
+  );
+
   // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
@@ -201,6 +219,15 @@ function midas_movers_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'administer nivo slider'.
+  $permissions['administer nivo slider'] = array(
+    'name' => 'administer nivo slider',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'nivo_slider',
   );
 
   // Exported permission: 'administer nodes'.
@@ -338,6 +365,15 @@ function midas_movers_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer views'.
+  $permissions['administer views'] = array(
+    'name' => 'administer views',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'views',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -390,6 +426,15 @@ function midas_movers_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'create mini panels'.
+  $permissions['create mini panels'] = array(
+    'name' => 'create mini panels',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_mini',
   );
 
   // Exported permission: 'create page content'.
