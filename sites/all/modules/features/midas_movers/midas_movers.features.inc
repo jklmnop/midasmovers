@@ -27,6 +27,30 @@ function midas_movers_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function midas_movers_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: slider.
+  $styles['slider'] = array(
+    'label' => 'Slider',
+    'effects' => array(
+      3 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1110,
+          'height' => 500,
+        ),
+        'weight' => 3,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function midas_movers_node_info() {

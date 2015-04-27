@@ -7150,6 +7150,28 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
   height: auto;
 }
+.navbar .navbar-brand div {
+  display: table;
+  height: 64px;
+  line-height: 64px;
+  font-size: 64px;
+  color: #000;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-brand div {
+    font-size: 32px;
+    line-height: 0;
+    display: inline-block;
+    height: auto;
+  }
+}
+.navbar .navbar-brand span {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.navbar .navbar-brand small {
+  font-size: 30%;
+}
 @media (min-width: 767px) {
   .navbar .menu {
     width: 100%;
@@ -7177,6 +7199,11 @@ table .checkbox input[type="checkbox"] {
     text-transform: uppercase;
     padding: 25px 15px 24px;
     z-index: 0;
+  }
+  .navbar .menu .leaf a:hover,
+  .navbar .menu .leaf a:focus {
+    background-color: #f5be00;
+    color: #fdfdfd;
   }
 }
 .footer-container {

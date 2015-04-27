@@ -18,6 +18,34 @@
     }
   }
 
+  .navbar-brand {
+    div {
+      display: table;
+      height: 64px;
+      line-height: 64px;
+      font-size: 64px;
+      color: #000;
+
+      @media (max-width: @screen-xs-max) {
+        font-size: 32px;
+        line-height: 0;
+        display: inline-block;
+        height: auto;
+      }
+
+    }
+
+    span {
+      display: table-cell;
+      vertical-align: bottom;
+      
+    }
+
+    small {
+      font-size: 30%;
+    }
+  }
+
   .menu {
     @media (min-width: @screen-xs-max) {
       width: 100%;
@@ -46,6 +74,12 @@
           text-transform: uppercase;
           padding: 25px 15px 24px;
           z-index: 0;
+
+          &:hover,
+          &:focus {
+            background-color: darken(@midasgold, 2%);
+            color: @white;
+          }
         }
       }
     }

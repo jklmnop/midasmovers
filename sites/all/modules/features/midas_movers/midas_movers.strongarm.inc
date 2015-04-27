@@ -168,21 +168,21 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1428443697;
+  $strongarm->value = 1430172883;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nmgm0a';
+  $strongarm->value = 'nnhmfz';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1428361230;
+  $strongarm->value = 1430172890;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -233,10 +233,10 @@ function midas_movers_strongarm() {
       'menu_custom' => '8ca9f6f82f4b161f169a1f32bbf43f41',
       'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
       'user_role' => '57d23ee3deb6e9262fa3b2617586b072',
-      'user_permission' => '863ab1b09f670b98f4739741a8a704c5',
-      'dependencies' => '5127e59c29d7df899096e30e4abae45b',
+      'user_permission' => '97bd593c1184109be8602dcca6477589',
+      'dependencies' => '039026a1a81e7345ccaea54ea9140530',
       'node' => '515f122680d4fd1878b95f7ca3a5e824',
-      'page_manager_pages' => '342e1c6d362fa9a693b0e63a5b70ef69',
+      'page_manager_pages' => '80e1e2150295b0f3de1eff045e7e7d8b',
       'menu_links' => '0d3e29a4051bb325981834b1a78e9f46',
       'panels_mini' => 'd1b79ca701510031d18fcbe57f5a6e24',
       'views_view' => '71f7ed981a52ff7a1b7c32ab57742f96',
@@ -335,7 +335,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_jquery_version';
-  $strongarm->value = '1.10';
+  $strongarm->value = '1.9';
   $export['jquery_update_jquery_version'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -605,14 +605,14 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1428443703;
+  $strongarm->value = 1430175891;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1428361211;
+  $strongarm->value = 1430172883;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
