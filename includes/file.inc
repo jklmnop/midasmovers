@@ -533,17 +533,7 @@ SetHandler Drupal_Security_Do_Not_Remove_See_SA_2006_006
 EOF;
 
   if ($private) {
-    $lines = <<<EOF
-    # Deny all requests from Apache 2.4+.
-    <IfModule mod_authz_core.c>
-      Require all denied
-    </IfModule>
-
-    # Deny all requests from Apache 2.0-2.2.
-    <IfModule !mod_authz_core.c>
-      Deny from all
-    </IfModule>
-EOF;
+    $lines = "Deny from all\n\n" . $lines;
   }
 
   return $lines;
@@ -1569,7 +1559,7 @@ function file_save_upload($form_field_name, $validators = array(), $destination 
     return FALSE;
   }
 
-  // Add in our check of the the file name length.
+  // Add in our check of the file name length.
   $validators['file_validate_name_length'] = array();
 
   // Call the validation functions specified by this function's caller.
