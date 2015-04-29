@@ -1,37 +1,14 @@
 'use strict';
 module.exports = function(grunt) {
+  var path = require('path');
 
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-
-    less: {
-      development: {
-        options: {
-          compress: true,
-          yuicompress: true,
-          optimization: 2
-        },
-        files: {
-          'sites/all/themes/custom/midasmovers/css/style.css': 'sites/all/themes/custom/midasmovers/less/style.less'
-        }
-      }
+  require('load-grunt-config')(grunt, {
+    configPath: path.join(process.cwd(), 'grunt/config'),
+    jitGrunt: {
+      customTasksDir: 'grunt/tasks'
     },
-    watch: {
-      styles: {
-        files: ['sites/all/themes/custom/midasmovers/less/**/*.less'], // which files to watch
-        tasks: ['less'],
-        options: {
-          nospawn: true
-        }
-      }
+    data: {
+      foo: 'bar' // accessible with '<%= foo %>'
     }
   });
-
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-
-
-  grunt.registerTask('default',['less', 'watch']);
-
-}
+};
