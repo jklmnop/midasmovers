@@ -1,13 +1,11 @@
 {
   "name": "midasmovers",
   "version": "1.0.0",
-  "devDependencies": {
-    "grunt": "~0.4.5"
-  },
   "dependencies": {
-    "grunt-contrib-less": "^1.0.1",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "~0.4.5",
     "jit-grunt": "^0.9.1",
-    "load-grunt-config": "^0.17.1"
+    "load-grunt-config": "^0.17.1",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
