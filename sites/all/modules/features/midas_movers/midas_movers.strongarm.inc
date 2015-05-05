@@ -182,7 +182,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nnn4bh';
+  $strongarm->value = 'nnur3y';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -235,14 +235,14 @@ function midas_movers_strongarm() {
     'midas_movers' => array(
       'variable' => '6e30a585ae8b71358d06787f7c4e21a5',
       'field_base' => '97a4964f0589f657a0b8f79781b16ec0',
-      'field_instance' => 'db2e5214f96d694c002fd6cd11a8eaa8',
+      'field_instance' => '88c4373635b51418d4f23600deb29a65',
       'filter' => 'e1ba718b9bb5189bfb3604dcce922498',
       'menu_custom' => '8ca9f6f82f4b161f169a1f32bbf43f41',
       'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
       'user_role' => '57d23ee3deb6e9262fa3b2617586b072',
-      'user_permission' => '97bd593c1184109be8602dcca6477589',
-      'dependencies' => '039026a1a81e7345ccaea54ea9140530',
-      'node' => '515f122680d4fd1878b95f7ca3a5e824',
+      'user_permission' => '1de53bdbfeae3421ebb3ecf9f1ee16c5',
+      'dependencies' => 'e3132205b5fffda394d2153e12dd3461',
+      'node' => '58addefad35a587b865d7e36fe5713c6',
       'page_manager_pages' => '80e1e2150295b0f3de1eff045e7e7d8b',
       'menu_links' => '0d3e29a4051bb325981834b1a78e9f46',
       'panels_mini' => 'd1b79ca701510031d18fcbe57f5a6e24',
@@ -282,13 +282,6 @@ function midas_movers_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__service'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'file_temporary_path';
-  $strongarm->value = '/Applications/MAMP/tmp/php';
-  $export['file_temporary_path'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
