@@ -160,6 +160,13 @@ function midas_movers_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_webform';
+  $strongarm->value = '0';
+  $export['comment_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'cron_key';
   $strongarm->value = '383vSYzaQwdegphmFmUB-SIYLaN7iojD_YU2fyyGA5w';
   $export['cron_key'] = $strongarm;
@@ -168,21 +175,21 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1430172883;
+  $strongarm->value = 1430787408;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nnhmfz';
+  $strongarm->value = 'nnn4bh';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1430172890;
+  $strongarm->value = 1430787412;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -240,6 +247,7 @@ function midas_movers_strongarm() {
       'menu_links' => '0d3e29a4051bb325981834b1a78e9f46',
       'panels_mini' => 'd1b79ca701510031d18fcbe57f5a6e24',
       'views_view' => '71f7ed981a52ff7a1b7c32ab57742f96',
+      'image' => '84cea024a85a624d4a7aa3f078c25204',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -288,6 +296,36 @@ function midas_movers_strongarm() {
   $strongarm->name = 'filter_fallback_format';
   $strongarm->value = 'plain_text';
   $export['filter_fallback_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'images';
+  $strongarm->value = array(
+    0 => array(
+      'weight' => '1',
+      'published' => 1,
+      'delete' => 0,
+      'fid' => '5',
+      'title' => '',
+      'description' => array(
+        'value' => '',
+        'format' => 'plain_text',
+      ),
+      'url' => '',
+      'visibility' => '*',
+      'transition' => '',
+    ),
+    'images__active_tab' => 'edit-images-0',
+  );
+  $export['images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'image_toolkit';
+  $strongarm->value = 'gd';
+  $export['image_toolkit'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -341,6 +379,20 @@ function midas_movers_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'maintenance_mode';
+  $strongarm->value = 0;
+  $export['maintenance_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maintenance_mode_message';
+  $strongarm->value = 'Midas Movers, LLC is currently under maintenance. We should be back shortly. Thank you for your patience.';
+  $export['maintenance_mode_message'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_expanded';
   $strongarm->value = array();
   $export['menu_expanded'] = $strongarm;
@@ -375,23 +427,26 @@ function midas_movers_strongarm() {
     15 => 60,
     16 => 59,
     17 => 58,
-    18 => 44,
-    19 => 31,
-    20 => 30,
-    21 => 29,
-    22 => 28,
-    23 => 24,
-    24 => 21,
-    25 => 15,
-    26 => 14,
-    27 => 13,
-    28 => 11,
-    29 => 7,
-    30 => 6,
-    31 => 5,
-    32 => 3,
-    33 => 2,
-    34 => 1,
+    18 => 45,
+    19 => 44,
+    20 => 31,
+    21 => 30,
+    22 => 29,
+    23 => 28,
+    24 => 24,
+    25 => 22,
+    26 => 21,
+    27 => 15,
+    28 => 14,
+    29 => 13,
+    30 => 11,
+    31 => 10,
+    32 => 7,
+    33 => 6,
+    34 => 5,
+    35 => 3,
+    36 => 2,
+    37 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -437,9 +492,178 @@ function midas_movers_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_animation_speed';
+  $strongarm->value = '500';
+  $export['nivo_slider_animation_speed'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'nivo_slider_banner_html_captions';
   $strongarm->value = '';
   $export['nivo_slider_banner_html_captions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_banner_settings';
+  $strongarm->value = array(
+    0 => array(
+      'fid' => '7',
+      'title' => '',
+      'description' => array(
+        'value' => '',
+        'format' => 'plain_text',
+      ),
+      'url' => '',
+      'visibility' => '*',
+      'transition' => '',
+      'weight' => 1,
+      'published' => 1,
+      'delete' => 0,
+    ),
+    1 => array(
+      'weight' => '1',
+      'published' => 1,
+      'delete' => 0,
+      'fid' => '5',
+      'title' => '',
+      'description' => array(
+        'value' => '',
+        'format' => 'plain_text',
+      ),
+      'url' => '',
+      'visibility' => '*',
+      'transition' => '',
+    ),
+  );
+  $export['nivo_slider_banner_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_box_columns';
+  $strongarm->value = '8';
+  $export['nivo_slider_box_columns'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_box_rows';
+  $strongarm->value = '4';
+  $export['nivo_slider_box_rows'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_control_navigation';
+  $strongarm->value = 1;
+  $export['nivo_slider_control_navigation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_control_nav_thumbs';
+  $strongarm->value = 0;
+  $export['nivo_slider_control_nav_thumbs'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_directional_navigation';
+  $strongarm->value = 1;
+  $export['nivo_slider_directional_navigation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_effect';
+  $strongarm->value = 'fade';
+  $export['nivo_slider_effect'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_image_style';
+  $strongarm->value = 1;
+  $export['nivo_slider_image_style'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_image_style_slide';
+  $strongarm->value = 'slider';
+  $export['nivo_slider_image_style_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_image_style_thumb';
+  $strongarm->value = 'thumbnail';
+  $export['nivo_slider_image_style_thumb'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_manual_advance';
+  $strongarm->value = 0;
+  $export['nivo_slider_manual_advance'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_next_text';
+  $strongarm->value = 'Next';
+  $export['nivo_slider_next_text'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_pause_on_hover';
+  $strongarm->value = 1;
+  $export['nivo_slider_pause_on_hover'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_pause_time';
+  $strongarm->value = '5000';
+  $export['nivo_slider_pause_time'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_previous_text';
+  $strongarm->value = 'Prev';
+  $export['nivo_slider_previous_text'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_random_start';
+  $strongarm->value = 1;
+  $export['nivo_slider_random_start'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_slices';
+  $strongarm->value = '15';
+  $export['nivo_slider_slices'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_start_slide';
+  $strongarm->value = '0';
+  $export['nivo_slider_start_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'nivo_slider_theme';
+  $strongarm->value = 'default';
+  $export['nivo_slider_theme'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -452,7 +676,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1427762861';
+  $strongarm->value = '1430433499';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -605,14 +829,14 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1430175891;
+  $strongarm->value = 1430787418;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1430172883;
+  $strongarm->value = 1430787408;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -623,6 +847,13 @@ function midas_movers_strongarm() {
     0 => 'spaceyraygun@gmail.com',
   );
   $export['update_notify_emails'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'upload';
+  $strongarm->value = '';
+  $export['upload'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -916,6 +1147,13 @@ Your account on [site:name] has been canceled.
   $strongarm->name = 'user_signatures';
   $strongarm->value = 0;
   $export['user_signatures'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_webform';
+  $strongarm->value = TRUE;
+  $export['webform_node_webform'] = $strongarm;
 
   return $export;
 }

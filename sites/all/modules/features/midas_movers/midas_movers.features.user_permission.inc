@@ -28,6 +28,15 @@ function midas_movers_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'access all webform results'.
+  $permissions['access all webform results'] = array(
+    'name' => 'access all webform results',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: 'access comments'.
   $permissions['access comments'] = array(
     'name' => 'access comments',
@@ -84,6 +93,24 @@ function midas_movers_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'overlay',
+  );
+
+  // Exported permission: 'access own webform results'.
+  $permissions['access own webform results'] = array(
+    'name' => 'access own webform results',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: 'access own webform submissions'.
+  $permissions['access own webform submissions'] = array(
+    'name' => 'access own webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: 'access site in maintenance mode'.
@@ -485,6 +512,13 @@ function midas_movers_user_default_permissions() {
     'module' => 'path',
   );
 
+  // Exported permission: 'create webform content'.
+  $permissions['create webform content'] = array(
+    'name' => 'create webform content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'customize shortcut links'.
   $permissions['customize shortcut links'] = array(
     'name' => 'customize shortcut links',
@@ -492,6 +526,15 @@ function midas_movers_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'shortcut',
+  );
+
+  // Exported permission: 'delete all webform submissions'.
+  $permissions['delete all webform submissions'] = array(
+    'name' => 'delete all webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: 'delete any article content'.
@@ -538,6 +581,13 @@ function midas_movers_user_default_permissions() {
   // Exported permission: 'delete any testimonial content'.
   $permissions['delete any testimonial content'] = array(
     'name' => 'delete any testimonial content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any webform content'.
+  $permissions['delete any webform content'] = array(
+    'name' => 'delete any webform content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -590,6 +640,22 @@ function midas_movers_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own webform content'.
+  $permissions['delete own webform content'] = array(
+    'name' => 'delete own webform content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own webform submissions'.
+  $permissions['delete own webform submissions'] = array(
+    'name' => 'delete own webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -606,6 +672,15 @@ function midas_movers_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit all webform submissions'.
+  $permissions['edit all webform submissions'] = array(
+    'name' => 'edit all webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: 'edit any article content'.
@@ -652,6 +727,13 @@ function midas_movers_user_default_permissions() {
   // Exported permission: 'edit any testimonial content'.
   $permissions['edit any testimonial content'] = array(
     'name' => 'edit any testimonial content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any webform content'.
+  $permissions['edit any webform content'] = array(
+    'name' => 'edit any webform content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -713,6 +795,22 @@ function midas_movers_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own webform content'.
+  $permissions['edit own webform content'] = array(
+    'name' => 'edit own webform content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own webform submissions'.
+  $permissions['edit own webform submissions'] = array(
+    'name' => 'edit own webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: 'edit terms in tags'.
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
@@ -720,6 +818,15 @@ function midas_movers_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit webform components'.
+  $permissions['edit webform components'] = array(
+    'name' => 'edit webform components',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: 'generate features'.
