@@ -85,9 +85,10 @@
 
       <?php if (!empty($site_name)): ?>
       <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <h1>
+        <h1 class="sr-only"><span>Midas Movers <small>LLC</small></span></h1>
+        <div>
           <span>Midas Movers <small>LLC</small></span>
-        </h1>
+        </div>
       </a>
       <?php endif; ?>
 

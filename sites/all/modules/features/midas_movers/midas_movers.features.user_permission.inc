@@ -230,6 +230,15 @@ function midas_movers_user_default_permissions() {
     'module' => 'menu',
   );
 
+  // Exported permission: 'administer meta tags'.
+  $permissions['administer meta tags'] = array(
+    'name' => 'administer meta tags',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'metatag',
+  );
+
   // Exported permission: 'administer mini panels'.
   $permissions['administer mini panels'] = array(
     'name' => 'administer mini panels',
@@ -736,6 +745,15 @@ function midas_movers_user_default_permissions() {
     'name' => 'edit any webform content',
     'roles' => array(),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit meta tags'.
+  $permissions['edit meta tags'] = array(
+    'name' => 'edit meta tags',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'metatag',
   );
 
   // Exported permission: 'edit own article content'.
