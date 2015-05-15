@@ -175,21 +175,21 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1430959284;
+  $strongarm->value = 1431649996;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nnygc8';
+  $strongarm->value = 'nod8lx';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1430874248;
+  $strongarm->value = 1431649997;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -233,21 +233,22 @@ function midas_movers_strongarm() {
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'midas_movers' => array(
-      'variable' => '6e30a585ae8b71358d06787f7c4e21a5',
+      'variable' => 'faa07e327ea3fd172c53c3417165b0a4',
       'field_base' => '97a4964f0589f657a0b8f79781b16ec0',
       'field_instance' => '88c4373635b51418d4f23600deb29a65',
       'filter' => 'e1ba718b9bb5189bfb3604dcce922498',
       'menu_custom' => '8ca9f6f82f4b161f169a1f32bbf43f41',
-      'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
+      'taxonomy' => 'd51c12b475068c20f68b801a594aa5e4',
       'user_role' => '57d23ee3deb6e9262fa3b2617586b072',
-      'user_permission' => '1de53bdbfeae3421ebb3ecf9f1ee16c5',
-      'dependencies' => 'e3132205b5fffda394d2153e12dd3461',
+      'user_permission' => 'a150f29912dad2afd0e0d81295228670',
+      'dependencies' => '8b4b0866579686caae38b4a2ca1b2ec7',
       'node' => '58addefad35a587b865d7e36fe5713c6',
       'page_manager_pages' => '80e1e2150295b0f3de1eff045e7e7d8b',
       'menu_links' => '4823068afca22d2ec97722c24b4041ea',
       'panels_mini' => 'd1b79ca701510031d18fcbe57f5a6e24',
       'views_view' => '71f7ed981a52ff7a1b7c32ab57742f96',
       'image' => '84cea024a85a624d4a7aa3f078c25204',
+      'metatag' => '4131cd63496b6a88bc6395bef07f7c97',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -352,7 +353,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_jquery_admin_version';
-  $strongarm->value = '';
+  $strongarm->value = '1.7';
   $export['jquery_update_jquery_admin_version'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -836,7 +837,7 @@ function midas_movers_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1430960810;
+  $strongarm->value = 1431650001;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
